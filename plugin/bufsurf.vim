@@ -23,6 +23,9 @@ command BufSurfList :call <SID>BufSurfList()
 command BufSurfListAll :call <SID>BufSurfListAll()
 command BufSurfClear :call <SID>BufSurfClear()
 
+nnoremap <silent> <Plug>(buf-surf-back) :BufSurfBack<CR>
+nnoremap <silent> <Plug>(buf-surf-forward) :BufSurfForward<CR>
+
 " List of buffer names that we should not track.
 let s:ignore_buffers = split(g:BufSurfIgnore, ',')
 
